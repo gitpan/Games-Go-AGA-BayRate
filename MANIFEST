@@ -1,3 +1,4 @@
+Changes
 LICENSE
 MANIFEST
 META.yml
@@ -17,7 +18,6 @@ lib/Games/Go/AGA/BayRate/Collection.pm
 lib/Games/Go/AGA/BayRate/GSL/Multimin.pm
 lib/Games/Go/AGA/BayRate/Game.pm
 lib/Games/Go/AGA/BayRate/Player.pm
-mylib_obsolete/libmy_gsl.a
 t/Collection.t
 t/Game.t
 t/Player.t

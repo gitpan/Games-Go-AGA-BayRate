@@ -1,0 +1,11 @@
+Revision history for Perl extension Games::Go::AGA::BayRate
+
+0.066     2013-12-04 15:00:52 America/Los_Angeles
+    Check for GSL libs using pkg-config or gsl-config instead
+        of Devel::CheckLib.
+    Modified G::G::A::B::GSL::Multimin.pm to use pkg-config or
+        gsl-config.  this make GSL install via Alien::GSL work.
+
+0.064     2013-10-05
+    Original release.
+

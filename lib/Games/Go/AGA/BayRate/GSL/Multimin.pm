@@ -10,7 +10,8 @@ use strict;
 use warnings;
 package Games::Go::AGA::BayRate::GSL::Multimin;
 
-our $VERSION = '0.063'; # VERSION
+our $VERSION = '0.066'; # VERSION
+my $libs;
 BEGIN {
     if (not -f 'swigperlrun.h') {
         print "swigperlrun.h not available, attempting to create it:\n",
@@ -21,11 +22,22 @@ BEGIN {
         }
         print "You may remove swigperlrun.h when this program completes.\n",
     }
+
+    eval {
+        $libs = `pkg-config --libs gsl 2>/dev/null`;
+    };
+    if (not $libs) {
+        eval {
+            $libs = `gsl-config --libs 2>/dev/null`;
+        }
+    };
+
+    chomp $libs;
 }
 
 use Inline C => Config =>
-        LIBS => '-lgsl',
-        INC => '-I../../../../../../../..';
+        LIBS => $libs,
+        INC => '-I../../../../../../../..'; # gets us back to . from deep inside _Inline/
 use Inline C => <<'END';
 
 // perl's Math::GSL::Multimin is still a work in progress.

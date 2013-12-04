@@ -35,7 +35,7 @@ package Games::Go::AGA::BayRate;
 
 use base Games::Go::AGA::BayRate::Collection;
 
-our $VERSION = '0.063'; # VERSION
+our $VERSION = '0.066'; # VERSION
 
 sub new {
     my ($proto, %args) = @_;

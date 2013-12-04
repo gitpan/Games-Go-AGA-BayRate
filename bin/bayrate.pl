@@ -23,7 +23,7 @@ use Math::GSL::Vector;
 use Math::GSL::Multimin ( ':all' ); # for &main::gsl_multimin_fdfminimizer_minimum
 use Math::GSL::BLAS ( ':all' );   # for gsl_blas_dnrm2
 
-our $VERSION = '0.063'; # VERSION
+our $VERSION = '0.066'; # VERSION
 
 # # column offset in games table
 # Readonly my $Game_ID              => 0 ;

@@ -40,7 +40,7 @@ use Math::GSL::Errno ( ':all' );
 use Math::GSL::Spline ( ':all' );
 use Math::GSL::Interp ( ':all' );
 
-our $VERSION = '0.063'; # VERSION
+our $VERSION = '0.066'; # VERSION
 
 my $spline;     # spline is class data
 
