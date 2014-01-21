@@ -51,7 +51,7 @@ use Math::GSL::SF ( ':all' );   # Special Functions (for sf_erfc)
 use Math::GSL::Linalg ( ':all' );   # Linear Algebra (for gsl_linalg_LU_decomp)
 use Games::Go::AGA::BayRate::GSL::Multimin;
 
-our $VERSION = '0.066'; # VERSION
+our $VERSION = '0.071'; # VERSION
 
 # Set some constants
 #Readonly our $M_SQRT2             => sqrt(2.0);

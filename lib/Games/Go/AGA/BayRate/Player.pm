@@ -35,12 +35,11 @@ package Games::Go::AGA::BayRate::Player;
 
 use Carp;
 use Readonly;
-use Scalar::Util qw( refaddr );
 use Math::GSL::Errno ( ':all' );
 use Math::GSL::Spline ( ':all' );
 use Math::GSL::Interp ( ':all' );
 
-our $VERSION = '0.066'; # VERSION
+our $VERSION = '0.071'; # VERSION
 
 my $spline;     # spline is class data
 
@@ -121,7 +120,7 @@ sub set_rating {
 
 sub set_crating {
     my ($self, $new) = @_;
-    die "set_crating() requires new rating value" if (not $new);
+    die "set_crating() requires new rating value" if (not defined $new);
     $self->{crating} = $new;
     $self->{rating} = ($new > 0) ? $new + 1.0 : $new - 1.0;
 }

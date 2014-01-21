@@ -1,5 +1,8 @@
 Revision history for Perl extension Games::Go::AGA::BayRate
 
+0.071     2014-01-21 08:59:32 America/Los_Angeles
+    Allow set_crating to have a value of 0
+
 0.066     2013-12-04 15:00:52 America/Los_Angeles
     Check for GSL libs using pkg-config or gsl-config instead
         of Devel::CheckLib.

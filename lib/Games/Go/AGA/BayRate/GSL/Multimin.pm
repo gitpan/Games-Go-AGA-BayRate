@@ -10,7 +10,7 @@ use strict;
 use warnings;
 package Games::Go::AGA::BayRate::GSL::Multimin;
 
-our $VERSION = '0.066'; # VERSION
+our $VERSION = '0.071'; # VERSION
 my $libs;
 BEGIN {
     if (not -f 'swigperlrun.h') {

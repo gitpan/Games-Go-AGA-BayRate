@@ -37,7 +37,7 @@ use Readonly;
 use Carp;
 use Math::GSL::SF ( ':all' );   # Special Functions (for sf_erfc)
 
-our $VERSION = '0.066'; # VERSION
+our $VERSION = '0.071'; # VERSION
 
 Readonly our @attr => (
     'komi',        # Komi
